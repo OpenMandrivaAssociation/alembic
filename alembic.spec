@@ -11,7 +11,6 @@ Group:          System/Libraries
 URL:            http://alembic.io/
 Source0:        https://github.com/%{name}/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  cmake
-BuildRequires:  gcc-c++
 BuildRequires:  hdf5-devel
 BuildRequires:  pkgconfig(IlmBase)
 BuildRequires:  pkgconfig(OpenEXR)
