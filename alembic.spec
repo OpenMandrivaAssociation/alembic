@@ -3,8 +3,8 @@
 %define develname %mklibname %{name} -d
 
 Name:           alembic
-Version:	1.7.11
-Release:        1
+Version:	1.7.12
+Release:	1
 Summary:        Open framework for storing and sharing scene data
 License:        BSD
 Group:          System/Libraries
