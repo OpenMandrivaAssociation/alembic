@@ -1,9 +1,9 @@
-%define major     1.7
+%define major     %(echo %{version}|cut -d. -f1-2)
 %define libname   %mklibname %{name} %{major}
 %define develname %mklibname %{name} -d
 
 Name:           alembic
-Version:	1.7.16
+Version:	1.8.1
 Release:	1
 Summary:        Open framework for storing and sharing scene data
 License:        BSD
