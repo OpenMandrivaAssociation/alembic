@@ -3,18 +3,19 @@
 %define develname %mklibname %{name} -d
 
 Name:           alembic
-Version:	1.8.1
+Version:	1.8.3
 Release:	1
 Summary:        Open framework for storing and sharing scene data
 License:        BSD
 Group:          System/Libraries
 URL:            http://alembic.io/
 Source0:        https://github.com/%{name}/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
+Patch0:		alembic-1.8.3-no-openexr2-dep.patch
 BuildRequires:  cmake
 BuildRequires:  hdf5-devel
-BuildRequires:  pkgconfig(IlmBase)
 BuildRequires:  pkgconfig(OpenEXR)
 BuildRequires:  pkgconfig(zlib)
+BuildRequires:	ilmbase-devel
 
 %description
 Alembic is an open computer graphics interchange framework. Alembic distills
