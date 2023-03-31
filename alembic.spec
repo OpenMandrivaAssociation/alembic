@@ -4,7 +4,7 @@
 
 Name:           alembic
 Version:	1.8.4
-Release:	1
+Release:	2
 Summary:        Open framework for storing and sharing scene data
 License:        BSD
 Group:          System/Libraries
