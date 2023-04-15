@@ -3,8 +3,8 @@
 %define develname %mklibname %{name} -d
 
 Name:           alembic
-Version:	1.8.4
-Release:	2
+Version:	1.8.5
+Release:	1
 Summary:        Open framework for storing and sharing scene data
 License:        BSD
 Group:          System/Libraries
@@ -62,8 +62,8 @@ sed -i \
     -e 's/ConfigPackageLocation lib/ConfigPackageLocation %{_lib}/g' \
     lib/Alembic/CMakeLists.txt
 
-iconv -f iso8859-1 -t utf-8 ACKNOWLEDGEMENTS.txt > ACKNOWLEDGEMENTS.txt.conv && \
-    mv -f ACKNOWLEDGEMENTS.txt.conv ACKNOWLEDGEMENTS.txt
+#iconv -f iso8859-1 -t utf-8 ACKNOWLEDGEMENTS.txt > ACKNOWLEDGEMENTS.txt.conv && \
+#    mv -f ACKNOWLEDGEMENTS.txt.conv ACKNOWLEDGEMENTS.txt
 
 %build
 %cmake \
