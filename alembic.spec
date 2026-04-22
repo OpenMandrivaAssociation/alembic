@@ -12,6 +12,7 @@ URL:            https://alembic.io/
 Source0:        https://github.com/%{name}/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 #Patch0:		alembic-1.8.3-no-openexr2-dep.patch
 BuildRequires:  cmake
+BuildRequires:  make
 BuildRequires:  hdf5-devel
 BuildRequires:  pkgconfig(OpenEXR)
 BuildRequires:  pkgconfig(zlib)
